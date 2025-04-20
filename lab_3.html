@@ -5,93 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UTHM</title>
     <style>
-       * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+    
         body {
-            background-image: url('background.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('background.jpg') center/cover no-repeat fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
-
+    
         .container {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             width: 100%;
         }
-
+    
         .logo {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 20px;
+            background-color: #ffffff90;
         }
-
+    
         .navigation {
             display: flex;
             justify-content: center;
-            gap: 80px;
-            padding: 10px;
-            background-color: #f2c5e6;
+            gap: 60px;
+            padding: 15px;
+            background: linear-gradient(to right, #f2c5e6, #e8d4f5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+    
         .navigation a {
             text-decoration: none;
             font-size: 18px;
-            color: #333;
+            color: #222;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
-
+    
+        .navigation a:hover {
+            color: #6a0dad;
+        }
+    
         .intro {
-            padding: 20px;
-            text-align: justify;
+            padding: 30px;
             text-align: center;
-            background-color: #d3e0ea;
-            margin-top: 10px;
-            font-size: 18px;
+            background-color: #e9f5f9;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .intro h2 {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
-            Verdana, sans-serif;
+    
+        .intro img {
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
         }
-
+    
+        .intro p {
+            margin: 8px 0;
+        }
+    
+        .intro a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+    
         .boxes {
             display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            margin-top: 10px;
-            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 30px;
         }
-
+    
         .box {
-            flex: 1;
+            flex: 1 1 300px;
             min-height: 250px;
-            background-color: #8b5d8b;
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            font-size: 15px;
+            background: linear-gradient(to bottom right, #8b5d8b, #c88ac8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             color: white;
-            font-weight: bold;
-            text-align: center;
-            text-align: justify;
+            transition: transform 0.3s ease;
         }
-
+    
+        .box:hover {
+            transform: translateY(-5px);
+        }
+    
         .box h2 {
-            font-size: 30px;
-            color: rgb(0, 0, 0); 
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #fdd6ff;
         }
-
+    
+        .box p {
+            margin: 6px 0;
+            font-size: 16px;
+        }
+    
         .campus-life {
             display: flex;
             flex-wrap: wrap;
@@ -99,23 +120,30 @@
             justify-content: center;
             margin-top: 15px;
         }
-
+    
         .campus-life img {
-            width: 150px;   
-            height: 100px;  
-            border-radius: 8px;  
-            object-fit: cover;   
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
+    
+        .campus-life img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    
         .footer {
-            background-color: rgb(0, 0, 0);
+            background-color: #222;
             color: white;
             text-align: center;
             padding: 15px;
             margin-top: auto;
+            font-size: 14px;
         }
     </style>
+    
 </head>
 <body>
     <div class="container">
