@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTHM</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 10px;
+            background-color: #f2c5e6;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .intro {
+            padding: 20px;
+            text-align: justify;
+            text-align: center;
+            background-color: #d3e0ea;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .intro h2 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            min-height: 250px;
+            background-color: #8b5d8b;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-align: justify;
+        }
+
+        .box h2 {
+            font-size: 30px;
+            color: rgb(0, 0, 0); 
+        }
+
+        .campus-life {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .campus-life img {
+            width: 150px;   
+            height: 100px;  
+            border-radius: 8px;  
+            object-fit: cover;   
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="Logo-Universiti-Tun-Hussein-Onn-Malaysia-UTHM.png" 
+            alt="Logo" width="110">
+        </div>
+
+        <div class="navigation">
+            <a href="#biodata">Biodata</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#campus-life">Campus life</a>
+        </div>
+
+        <div id="biodata" class="intro">
+            <h2>Biodata</h2>
+            <img src="profile picture.jpg" alt="Profile Picture" width="150" style="border-radius: 50%; margin-top: 20px;">
+            <p><strong>Name:</strong> NUR ALIA NAJIBAH BINTI AZMAN</p>
+            <p><strong>Date of Birth:</strong> 13 FEBRUARI 2003</p>
+            <p><strong>Religion:</strong> ISLAM</p>
+            <p><strong>Race:</strong> MALAY</p>
+            <p><strong>Address:</strong> PARIT SAMION, PARIT RAJA, LORONG AL-AMIN, JOHOR</p>
+            <p><strong>Mobile Phone:</strong> 017-3937790</p>
+            <p><strong>Social Media:</strong> @nuraliabh</p>
+            <p><strong>Website:</strong> <a href="https://github.com/aliajibah/Lab-2" target="_blank">GitHub Profile</a></p>
+            <p><strong>Course and Institution:</strong> BACHELOR OF INFORMATION TECHNOLOGY</p>
+            <p><strong>Programming Skills:</strong> JAVA, PYTHON, HTML, C, C++</p>
+            <p><strong>2025 Wishlist:</strong> BE INDEPENDENT</p>
+        </div>
+
+        <div class="boxes">
+            <div class="box" id="hobbies">
+                <h2>Hobbies</h2>
+                <p>&#128747 Traveling</p>
+                <p>&#128248Taking picture</p>
+                <p>&#128507 Hiking</p>
+                <p>&#127939 Running</p>
+            </div>
+        
+            <div class="box" id="campus-life">
+                <h2>Campus Life</h2>
+                <p>Campus life has been full of adventures! I went to an open house at my housemate’s home, 
+                    climbed Gunung Lambak for an unforgettable hiking experience, joined a colourful and 
+                    exciting Colour Run, enjoyed relaxing moments at the beach with friends, and participated
+                    in awesome co-curricular (Ko-Ko) programs that made university life even more memorable!</p>
+
+                <!-- Add images of campus life -->
+                <div class="campus-life">
+                    <img src="c1.jpg" alt="Campus Life 1">
+                    <img src="c2.jpg" alt="Campus Life 2">
+                    <img src="c3.jpg" alt="Campus Life 3">
+                    <img src="c4.jpg" alt="Campus Life 4">
+                    <img src="c5.JPG" alt="Campus Life 5">
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="footer">
+            &copy; AliaNajibah 2025
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
